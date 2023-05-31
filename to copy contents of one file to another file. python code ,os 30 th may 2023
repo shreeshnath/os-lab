@@ -1,0 +1,25 @@
+Write program to copy contents of one file to another file.
+# open both files
+with open('first.txt','r') as firstfile, open('second.txt','a') as secondfile:
+	
+	# read content from first file
+	for line in firstfile:
+			
+			# append content to second file
+			secondfile.write(line)
+Program Count the Numbers of Words in a File
+
+file = open("C:\data.txt", "rt")
+data = file.read()
+words = data.split()
+
+print('Number of words in text file :', len(words))
+
+   
+
+3.Program to Write a Sentence to a File
+  
+# Open the file for writing
+with open('file.txt', 'w') as f:
+	# Define the data to be written
+	data = ['This is the first line', 'This is the second line', 'This is the third line']
